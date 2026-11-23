@@ -1,0 +1,11 @@
+# Cloudflare Pages 헤더 설정 — pipeline/serve.py 가 붙이던 헤더를 정적 호스팅용으로 재현
+# 출처 근거: src/pipeline/serve.py end_headers() 실측 (2026-11-11 복제 작업 시점)
+/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Access-Control-Allow-Headers: *
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  CDN-Cache-Control: no-cache, max-age=0
+  Pragma: no-cache
+  Expires: 0
