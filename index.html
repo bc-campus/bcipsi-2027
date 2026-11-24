@@ -3078,6 +3078,8 @@ tr.rrowx.strong{box-shadow:0 0 0 2px #E47026 inset}
     d.head.appendChild(st);
   }catch(e){} });
   document.querySelectorAll('#periodSeg button').forEach(b=>b.addEventListener('click',()=>{ if(on){ lastSrc=BASE+'?p='+CODE[b.dataset.period]; fr.src=lastSrc; } }));
+  // [프리로드] 페이지 열림 때 백그라운드에서 미리 로딩 — 버튼 첫 클릭 시에도 스플래시 노출 방지
+  lastSrc=BASE+'?p='+CODE[curPeriod()]; fr.src=lastSrc;
   document.querySelectorAll('.mtab:not(.mtab-ext), #backBtn').forEach(b=>b.addEventListener('click',()=>show(false)));
 })();
 </script>
