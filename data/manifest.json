@@ -122,18 +122,18 @@
     "susi_2": {
       "label": "수시2차",
       "status": "available",
-      "data": "data/2027/susi-2.41e845f08afc.json",
-      "data_js": "data/2027/susi-2.41e845f08afc.js",
-      "as_of": "2026-11-23",
+      "data": "data/2027/susi-2.4ab9a532663c.json",
+      "data_js": "data/2027/susi-2.4ab9a532663c.js",
+      "as_of": "2026-11-24",
       "years": [
         2027,
         2026,
         2025
       ],
-      "sha256_12": "41e845f08afc",
-      "dash": "data/dash.susi_2.ff3476b09e54.json",
-      "dash_js": "data/dash.susi_2.ff3476b09e54.js",
-      "dash_sha256_12": "ff3476b09e54"
+      "sha256_12": "4ab9a532663c",
+      "dash": "data/dash.susi_2.a9123a35a8b4.json",
+      "dash_js": "data/dash.susi_2.a9123a35a8b4.js",
+      "dash_sha256_12": "a9123a35a8b4"
     },
     "jeongsi": {
       "label": "정시",
@@ -152,5 +152,5 @@
     }
   },
   "build": "60f596e8c4",
-  "html_sha": "1eaaafd3e55e"
+  "html_sha": "0727767c0746"
 }
