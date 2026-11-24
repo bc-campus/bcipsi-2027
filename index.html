@@ -3064,11 +3064,11 @@ tr.rrowx.strong{box-shadow:0 0 0 2px #E47026 inset}
   if(!link||!ov||!fr) return;
   const BASE=link.href.split('?')[0];
   const CODE={susi_1:'1',susi_2:'2',jeongsi:'3'};
-  let on=false;
+  let on=false, lastSrc='';
   const curPeriod=()=>{ const el=document.querySelector('#periodSeg button[aria-selected="true"]'); return el?el.dataset.period:'susi_1'; };
   const setPad=()=>{ if(on) ov.style.paddingTop=nw.offsetHeight+'px'; };
   const show=(o)=>{ on=o; ov.classList.toggle('open',o); link.classList.toggle('ext-on',o);
-    if(o){ fr.src=BASE+'?p='+CODE[curPeriod()]; setPad(); } };
+    if(o){ const s=BASE+'?p='+CODE[curPeriod()]; if(s!==lastSrc){ lastSrc=s; fr.src=s; } setPad(); } };
   link.addEventListener('click',e=>{ e.preventDefault(); show(!on); });
   window.addEventListener('resize',setPad);
   // [풀폭 보강] 불려진 사이트 내부 컨테이너(max-width)를 iframe 범위 안에서만 해제
@@ -3077,7 +3077,7 @@ tr.rrowx.strong{box-shadow:0 0 0 2px #E47026 inset}
     const st=d.createElement('style'); st.textContent='.wrap{max-width:1600px !important;width:100% !important} body{margin:0 !important}';
     d.head.appendChild(st);
   }catch(e){} });
-  document.querySelectorAll('#periodSeg button').forEach(b=>b.addEventListener('click',()=>{ if(on) fr.src=BASE+'?p='+CODE[b.dataset.period]; }));
+  document.querySelectorAll('#periodSeg button').forEach(b=>b.addEventListener('click',()=>{ if(on){ lastSrc=BASE+'?p='+CODE[b.dataset.period]; fr.src=lastSrc; } }));
   document.querySelectorAll('.mtab:not(.mtab-ext), #backBtn').forEach(b=>b.addEventListener('click',()=>show(false)));
 })();
 </script>
