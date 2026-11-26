@@ -131,9 +131,9 @@
         2025
       ],
       "sha256_12": "b2825cc20f51",
-      "dash": "data/dash.susi_2.cb9c65441a6e.json",
-      "dash_js": "data/dash.susi_2.cb9c65441a6e.js",
-      "dash_sha256_12": "cb9c65441a6e"
+      "dash": "data/dash.susi_2.69db84aa2a27.json",
+      "dash_js": "data/dash.susi_2.69db84aa2a27.js",
+      "dash_sha256_12": "69db84aa2a27"
     },
     "jeongsi": {
       "label": "정시",
@@ -151,6 +151,6 @@
       "dash_sha256_12": "cc37125bc95c"
     }
   },
-  "build": "60f596e8c4",
-  "html_sha": "0727767c0746"
+  "build": "82f45a8dd1",
+  "html_sha": "9c76a8d23716"
 }
