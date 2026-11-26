@@ -1669,8 +1669,8 @@ tr.rrowx.strong{box-shadow:0 0 0 2px #E47026 inset}
         $("freshDot").className = "dot amber";
         $("freshText").textContent = `접수 대기 · ${DASH.year}학년도 최종 마감(${String(DASH.as_of || "").replace(/-/g, ".")}) 기준`;
       } else if (DASH && DASH.status === "in_progress") {
-        $("freshDot").className = "dot amber";
-        $("freshText").textContent = `접수 중 · 최신 접수일 ${String(DASH.as_of || "").replace(/-/g, ".")} 기준`;
+        $("freshDot").className = "dot";
+        $("freshText").textContent = `접수 마감 · 최신 접수일 ${String(DASH.as_of || "").replace(/-/g, ".")} 기준`;
       } else {
         $("freshDot").className = "dot";
         $("freshText").textContent = "FINAL · 원서접수 마감 확정";
