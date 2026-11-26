@@ -131,9 +131,9 @@
         2025
       ],
       "sha256_12": "b2825cc20f51",
-      "dash": "data/dash.susi_2.69db84aa2a27.json",
-      "dash_js": "data/dash.susi_2.69db84aa2a27.js",
-      "dash_sha256_12": "69db84aa2a27"
+      "dash": "data/dash.susi_2.ca3993dc9edb.json",
+      "dash_js": "data/dash.susi_2.ca3993dc9edb.js",
+      "dash_sha256_12": "ca3993dc9edb"
     },
     "jeongsi": {
       "label": "정시",
